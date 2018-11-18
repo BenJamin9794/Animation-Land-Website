@@ -46,7 +46,7 @@ $.getJSON('https://discordapp.com/api/servers/' + serverID + '/widget.json', fun
 		img.setAttribute('src', data.members[i].avatar_url);
 		img.setAttribute('class', 'discord-avatar');
 		var div = document.createElement('div');
-		if(data.members[i].status == 'offline') {
+		(data.members[i].status == 'offline') {
 			div.setAttribute('class', 'discord-user-status discord-offline');
 		}
 		var text = document.createTextNode(data.members[i].username);
