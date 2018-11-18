@@ -38,7 +38,7 @@ $.getJSON('https://discordapp.com/api/servers/' + serverID + '/widget.json', fun
 
 		$('.discord-userlist').append(item);
 		
-		$('.discord-channel').html('Offline (' + data.members.length + ')');
+		$('.discord-channel2').html('Offline (' + data.members.length + ')');
 	for (i = 0; i < data.members.length; i++) {
 		var item = document.createElement('li');
 		item.setAttribute('class', 'discord-user');
@@ -56,7 +56,7 @@ $.getJSON('https://discordapp.com/api/servers/' + serverID + '/widget.json', fun
 		item.appendChild(div);
 		item.appendChild(text);
 
-		$('.discord-userlist').append(item);
+		$('.discord-userlist2').append(item);
 	}
 });
 
