@@ -37,8 +37,8 @@ $.getJSON('https://discordapp.com/api/servers/' + serverID + '/widget.json', fun
 		item.appendChild(text);
 
 		$('.discord-userlist').append(item);
-	
-	$('.discord-channel').html('Offline (' + data.members.length + ')');
+		
+		$('.discord-channel').html('Offline (' + data.members.length + ')');
 	for (i = 0; i < data.members.length; i++) {
 		var item = document.createElement('li');
 		item.setAttribute('class', 'discord-user');
@@ -46,7 +46,9 @@ $.getJSON('https://discordapp.com/api/servers/' + serverID + '/widget.json', fun
 		img.setAttribute('src', data.members[i].avatar_url);
 		img.setAttribute('class', 'discord-avatar');
 		var div = document.createElement('div');
-		(data.members[i].status == 'offline') {
+		if(data.members[i].status == 'offline') {
+			div.setAttribute('class', 'discord-user-status discord-offline');
+		} else {
 			div.setAttribute('class', 'discord-user-status discord-offline');
 		}
 		var text = document.createTextNode(data.members[i].username);
