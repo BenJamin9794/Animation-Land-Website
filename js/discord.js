@@ -37,6 +37,7 @@ $.getJSON('https://discordapp.com/api/servers/' + serverID + '/widget.json', fun
 		item.appendChild(text);
 
 		$('.discord-userlist').append(item);
+	}
 		
 		$('.discord-channel2').html('Offline (' + data.members.length + ')');
 	for (i = 0; i < data.members.length; i++) {
