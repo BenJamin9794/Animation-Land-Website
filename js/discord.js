@@ -29,7 +29,7 @@ $.getJSON('https://discordapp.com/api/servers/' + serverID + '/widget.json', fun
 		if(data.members[i].status == 'online') {
 			div.setAttribute('class', 'discord-user-status discord-online');
 		} else {
-			div.setAttribute('class', 'discord-user-status discord-idle');
+			div.setAttribute('class', 'discord-user-status discord-do-not-disturb');
 		}
 		var text = document.createTextNode(data.members[i].username);
 		item.appendChild(img);
