@@ -224,8 +224,11 @@ body {
 .discord-online {
     background-color: #43b581
 }
-.discord-idle {
-    background-color: #faa61a
+.discord-do-not-disturb {
+    background-color: #ff3f35
+}
+.discord-offline {
+    background-color: #808080
 }
 .discord-avatar {
     border-radius: 100%;
