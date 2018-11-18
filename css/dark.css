@@ -254,6 +254,11 @@ body {
     margin: 10px 10px 0 0!important;
     text-align: right
 }
+.discord-users-offline {
+    font-size: .75em!important;
+    margin: 10px 10px 0 0!important;
+    text-align: left
+}
 .discord-join {
     width: 100%;
     height: 30px;
