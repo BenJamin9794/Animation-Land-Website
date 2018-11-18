@@ -18,7 +18,7 @@ $.getJSON('https://discordapp.com/api/servers/' + serverID + '/widget.json', fun
 
 	$('.discord-title').html(titlebar);
 
-	$('.discord-channel').html('Online (' + data.members.length + ')');
+	$('.discord-channel').html('There are (' + data.members.length + ') users online in this discord server. They are:');
 	for (i = 0; i < data.members.length; i++) {
 		var item = document.createElement('li');
 		item.setAttribute('class', 'discord-user');
