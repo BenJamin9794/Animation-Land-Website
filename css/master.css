@@ -1,9 +1,9 @@
 @font-face {
-  font-family: 'Whitney';
-  src: local('Whitney'), url("../font/Whitney-Medium.ttf") format('truetype');
+  font-family: 'Minecraftia';
+  src: local('Minecraftia'), url("../font/Minecraftia.ttf") format('truetype');
 }
 
 body {
 	color: white;
-	font-family: Whitney; /* or Whitney*/
+	font-family: Minecraftia; /* or Minecraftia*/
 }
